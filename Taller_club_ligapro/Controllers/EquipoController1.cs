@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Taller_club_ligapro.Models;
+using Taller_club_ligapro.Repositorios;
 
 namespace Taller_club_ligapro.Controllers
 {
@@ -9,18 +10,10 @@ namespace Taller_club_ligapro.Controllers
         // GET: EquipoController1
         public ActionResult List()
         {
-            List<Equipo> equipos = new List<Equipo>();
-            Equipo ldu = new Equipo
-            {
-                Id = 1,
-                Nombre = "LDU",
-                PartidosJugados = 10,
-                PartidosGanados = 10,
-                PartidosEmpatados = 0,
-                ParitdosPerdidos = 0
-            };
-            equipos.Add(ldu);
-            return View(equipos);
+            EquipoRepository repo = new EquipoRepository();
+            var equipo = repo.DevulveListadoEquipos;
+            
+            return View(equipo);
         }
 
         // GET: EquipoController1/Details/5
