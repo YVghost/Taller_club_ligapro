@@ -9,27 +9,16 @@ namespace Taller_club_ligapro.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(100)]
-        [DisplayName("Ingrese nombre: ")]
-
+        [DisplayName("Ingrese el nombre")]
         public string Nombre { get; set; }
-        [Range(0,20)]
-
-        public int PartidosJugados{ get; set; }
         [Range(0, 20)]
-
+        public int PartidosJugados { get; set; }
+        [Range(0, 20)]
         public int PartidosGanados { get; set; }
         [Range(0, 20)]
-
         public int PartidosEmpatados { get; set; }
         [Range(0, 20)]
-
-
-        public int ParitdosPerdidos { get; set; }
-
-        public int TotalPuentos { get; set; }
-
-
-
-
+        public int PartidosPerdidos { get; set; }
+        public int ToatalPuntos { get; set; }
     }
 }
