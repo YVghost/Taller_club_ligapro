@@ -1,6 +1,6 @@
 ﻿using Taller_club_ligapro.Models;
 
-namespace Taller_club_ligapro.Repositories
+namespace Taller_club_ligapro.Repositorios
 {
     public class EquiposRepository
     {

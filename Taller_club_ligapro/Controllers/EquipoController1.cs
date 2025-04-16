@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Taller_club_ligapro.Models;
-using Taller_club_ligapro.Repositories;
+using Taller_club_ligapro.Repositorios;
 
 namespace Taller_club_ligapro.Controllers
 
